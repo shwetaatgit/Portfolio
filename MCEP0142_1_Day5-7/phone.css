@@ -1,0 +1,60 @@
+body{
+    background-color: white;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color: gray;
+}
+#about{
+    background-color: rgb(141, 140, 140);
+    height: 800px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+#about img{
+    border: 2px solid rgba(77, 77, 77, 0.61);
+    height: 250px;
+    width: 200px;
+}
+.fond{
+    font-size: 100%;
+}
+#project{
+    background-color: rgb(141, 140, 140);
+    width: 80%;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.mainbox div p{
+    font-size: 100%;
+}
+.boxes{
+    font-size: 100%;
+}
+#contact{
+    background-color: rgb(141, 140, 140);
+    width: 80%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+#contact p{
+    font-size: 100%;
+}
