@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amount Calculator</title>
+    <link rel="stylesheet" href="../AmountCal/style.css">
+</head>
+<body>
+    
+<div class="C1">
+<div class="container">
+    <br>
+    <h2>Amount Calculator</h2>
+    <br><br>
+    <div class="numbers">
+    <p id="bill">Enter Bill Amount</p>
+    <input type="text" class="box" id="amount" min="0" value placeholder="Bill amount (Rs.)">
+
+    <p id="peo">How many people are sharing the bill?</p>
+    <input type="text" class="box" id="people" min="1" value placeholder="Number of people (Default=1)">
+    <br><br>
+
+    <button id="button" onclick="myFunction()">Calculate</button>
+    <p id="calculate"></p>
+    <p id="alert"></p>
+    </div>
+</div>
+</div>
+
+<script>
+    function myFunction(){
+        var a = document.getElementById('amount').value;
+        var b = document.getElementById('people').value;
+    
+        if (a ==""){
+            document.getElementById("button").addEventListener("click", alert("Please enter values."));
+        }
+        else{
+            var c = Math.round(a/b*100)/100;
+            if (c=='Infinity'){
+                var c = document.getElementById('amount').value;
+            }
+            document.querySelector('#calculate').innerHTML= 'Contribution per person = Rs.'+ c
+        }
+    }
+</script>
+</body>
+</html>

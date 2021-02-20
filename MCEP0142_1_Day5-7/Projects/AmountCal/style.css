@@ -1,0 +1,35 @@
+body{
+    background-color: whitesmoke;
+}
+
+.C1 {
+    background-color: rgb(223, 219, 219);
+    height: 450px;
+    width: 300px;
+    border-radius: 5%;
+    margin-left: 41%;
+    margin-top: 5%;
+}
+
+.container {
+    margin-left: 12%;
+}
+#bill{
+    margin-left: 17%;
+}
+
+.box {
+    margin-left: 8%;
+    height: 25px;
+    width: 180px;
+}
+#button{
+    margin-left: 17%;
+    height: 40px;
+    width: 140px;
+    border-radius: 7px;
+    background-color: rgb(248, 221, 64);
+}
+#calculate{
+    margin-left: 7%;
+}
