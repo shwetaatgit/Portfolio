@@ -7,6 +7,17 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./MCEP0142_1_Day5-7/style.css">
     <link rel="stylesheet" media="screen and (max-width:768px)" href="./MCEP0142_1_Day5-7/phone.css">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script>
+        $(function() {
+           $( "#accordion-1" ).accordion({active: false, collapsible: true});
+        });
+    </script>
+     
+     <style>
+        #accordion-1{font-size: 14px;}
+     </style>
 </head>
 <body>
     <div class="container">
@@ -20,33 +31,43 @@
         </div>
         <div id="box2">
             <h1>About Me!</h1>
-            <p class="fond">Hello! I'm <b>Shweta Shinde</b>. Currently, I am doing B.Tech. at IIT Mandi.</p>
-            <p class="fond"><b>Education:</b></p>
-            <table style="width: 100%">
-                <tr>
-                    <th>Class</th>
-                    <th>Institution</th>
-                    <th>Marks Obtained</th>
-                </tr>
-                <tr>
-                    <td>Class X</td>
-                    <td>Jaihind High School, Dhule</td>
-                    <td>96.8%</td>
-                </tr>
-                <tr>
-                    <td>Class XII</td>
-                    <td>Ferguson Junior College, Pune</td>
-                    <td>80.64%</td>
-                </tr>
-                <tr>
-                    <td>B.Tech.(1st year)</td>
-                    <td>Indian Institute of Technology, Mandi</td>
-                    <td>8.3 cgpa</td>
-                </tr>
+            <div id = "accordion-1">
+                <button class="accordion"><b>Introduction:</b></button>
+                <div class="info">
+                    <p class="fond">Hello! I'm <b>Shweta Shinde</b>. Currently, I am doing B.Tech. at IIT Mandi.</p>
+                </div>
                 
-            </table>
-            
-            <p class="fond"><b>Technical Skills:</b> Python, HTML, CSS</p>
+                <button class="accordion"><b>Education:</b></button>
+                <div class="box">    
+                    <table style="width: 100%">
+                        <tr>
+                            <th>Class</th>
+                            <th>Institution</th>
+                            <th>Marks Obtained</th>
+                        </tr>
+                        <tr>
+                            <td>Class X</td>
+                            <td>Jaihind High School, Dhule</td>
+                            <td>96.8%</td>
+                        </tr>
+                        <tr>
+                            <td>Class XII</td>
+                            <td>Ferguson Junior College, Pune</td>
+                            <td>80.64%</td>
+                        </tr>
+                        <tr>
+                            <td>B.Tech.(1st year)</td>
+                            <td>Indian Institute of Technology, Mandi</td>
+                            <td>8.3 cgpa</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <button class="accordion"><b>Technical Skills:</b></button>
+                <div class="info">
+                    <p class="fond">Python, HTML, CSS</p>
+                </div>
+            </div>
 
         </div>
     
